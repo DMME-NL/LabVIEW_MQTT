@@ -10,11 +10,29 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="HomeAssistant" Type="Folder">
+			<Item Name="MQTT HASS Publisher.vi" Type="VI" URL="../Home Assistant/MQTT HASS Publisher.vi"/>
+			<Item Name="MQTT HASS Subscriber.vi" Type="VI" URL="../Home Assistant/MQTT HASS Subscriber.vi"/>
+		</Item>
 		<Item Name="MQTT Basics" Type="Folder">
-			<Item Name="MQTT Broker.vi" Type="VI" URL="../MQTT Broker.vi"/>
-			<Item Name="MQTT Publisher.vi" Type="VI" URL="../MQTT Publisher.vi"/>
-			<Item Name="MQTT Subscriber.vi" Type="VI" URL="../MQTT Subscriber.vi"/>
-			<Item Name="MQTT Transmitter.vi" Type="VI" URL="../MQTT Transmitter.vi"/>
+			<Item Name="MQTT Broker.vi" Type="VI" URL="../MQTT Basics/MQTT Broker.vi"/>
+			<Item Name="MQTT Publisher (DBL).vi" Type="VI" URL="../MQTT Basics/MQTT Publisher (DBL).vi"/>
+			<Item Name="MQTT Subscriber (DBL).vi" Type="VI" URL="../MQTT Basics/MQTT Subscriber (DBL).vi"/>
+			<Item Name="MQTT Transmitter (DBL).vi" Type="VI" URL="../MQTT Basics/MQTT Transmitter (DBL).vi"/>
+		</Item>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="ByteManipulation" Type="Folder">
+				<Item Name="Get value form byte segment.vi" Type="VI" URL="../Utilities/ByteManipulation/Get value form byte segment.vi"/>
+				<Item Name="Insert bit in Byte.vi" Type="VI" URL="../Utilities/ByteManipulation/Insert bit in Byte.vi"/>
+				<Item Name="Insert value in Byte.vi" Type="VI" URL="../Utilities/ByteManipulation/Insert value in Byte.vi"/>
+				<Item Name="Register+bit string to range.vi" Type="VI" URL="../Utilities/ByteManipulation/Register+bit string to range.vi"/>
+			</Item>
+			<Item Name="boolean2string.vi" Type="VI" URL="../Utilities/boolean2string.vi"/>
+			<Item Name="compare_doubles.vi" Type="VI" URL="../Utilities/compare_doubles.vi"/>
+			<Item Name="range_check_doubles.vi" Type="VI" URL="../Utilities/range_check_doubles.vi"/>
+			<Item Name="string contains substring.vi" Type="VI" URL="../Utilities/string contains substring.vi"/>
+			<Item Name="string2boolean.vi" Type="VI" URL="../Utilities/string2boolean.vi"/>
+			<Item Name="string2double.vi" Type="VI" URL="../Utilities/string2double.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -29,6 +47,7 @@
 				<Item Name="Connection_GOSPL.lvlib" Type="Library" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Connection/Connection/Connection_GOSPL.lvlib"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Default MQTT Packet (Empty).vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/MQTT Control Packets/Control Packets/ControlPacket/Default MQTT Packet (Empty).vi"/>
+				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -50,6 +69,9 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="GPString.lvlib" Type="Library" URL="/&lt;vilib&gt;/GPower/String/GPString.lvlib"/>
+				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
+				<Item Name="JSONtext.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/JSONtext.lvlib"/>
 				<Item Name="Locale -- enum.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/formatter.iso8601/Locale -- enum.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
